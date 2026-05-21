@@ -37,16 +37,6 @@ sudo cp gloriousctl /usr/local/bin
 ```
 ## Commands and parameters
 
-gloriousctl --info               | | | Displays the current cached configuration
-gloriousctl --set-dpi            | | | Sets up to 6 DPI stages (comma separated.) ex.: 400,800,1600,3200
-gloriousctl --set-dpi-color      | | | Sets colors for each DPI stage (Hex, comma-separated). ex.: FF0000,0000FF
-gloriousctl --set-effect         | | | Sets the lighting mode (e.g., off, rave, glorious, breathing,...)
-gloriousctl --set-colors         | | | Sets thec colors for the selected effect
-gloriousctl --set-brightness     | | | Sets effect brightness (0 to 4)
-gloriousctl --set-speed          | | | Sets effect animation speed (0 to 3)
-gloriousctl --set-debounce-time  | | | Sets click debounce in ms (2-16, even numbers (odds get rounded DOWN to even))
-gloriousctl --help               | | | Displays the built-in help text.
-
 | Command | Description |
 |---|---|
 | 'gloriousctl --info' | Displays the current cached configuration. |
