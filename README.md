@@ -9,55 +9,11 @@ Two families are supported by two separate code paths:
 | SinoWealth (VID 258a) | Model O / O-, Model D, Dream Machines DM5 | 520-byte feature report, readable | ported from upstream, unchanged |
 | Pixart (VID 093a) | Model I 2 Wireless / Wired (093a:821d) | 64-byte write-only fragments | new in this fork, mapped on real hardware |
 
-<<<<<<< HEAD
-## ⚠️ Architecture Note: Write-Only peri.
-During reverse-engineering, it was discovered that the Glorious Model I 2 Wireless firmware acts as a **Write-Only** device to save memory. It does not allow the host PC to read its current configuration. 
-=======
 Anything else that enumerates as Glorious is detected and refused rather than written to.
 See "Getting your mouse supported" below.
->>>>>>> 6c96134 (Pixart: hardware-mapped DPI/colour/polling, GTK GUI, installer, README)
 
 ## Install
 
-<<<<<<< HEAD
-## Prerequisites
-To compile this tool, you will need `gcc`, `make`, and the `hidapi` development libraries.
-On Debian/Ubuntu-based systems:
-```bash
-sudo apt update
-sudo apt install build-essential libhidapi-dev
-
-```
-## Compilation and Global Installation
-
-Clone the repository and compile the source code:
-```bash
-git clone https://github.com/zeppybabe/gloriousctl-linux.git
-cd gloriousctl-linux
-make
-```
-To make the command available globally on your Linux system, copy the compiled binary to your local bin dir:
-```bash
-sudo cp gloriousctl /usr/local/bin
-```
-## Commands and parameters
-
-| Command | Description |
-|---|---|
-| `gloriousctl --info` | Displays the current cached configuration. |
-| `gloriousctl --set-dpi` | Sets up to 6 DPI stages (comma separated).Example: `400`,`800`,`1600`,`3200` |
-| `gloriousctl --set-dpi-color` | Sets colors for each DPI stage (Hex, comma-separated). Ex.: `FF0000`,`0000FF` |
-| `gloriousctl --set-effect` | Sets the lighting mode.(Options: `off`, `rave`, `glorious`, `breathing`, etc.) |
-| `gloriousctl --set-colors` | Sets the colors for the selected effect. |
-| `gloriousctl --set-brightness` | Sets effect brightness (0 to 4). |
-| `gloriousctl --set-speed` | Sets effect animation speed (0 to 3). |
-| `gloriousctl --set-debounce-time` | Sets click debounce in ms (2-16, even numbers. Odds get rounded down to even). |
-| `gloriousctl --help` | Displays the built-in help text. |
-
-## Original repo basis
-
-[enkore's repo](https://github.com/enkore/gloriousctl)
-=======
 ```
 git clone <this repo>
 cd gloriousctl
@@ -160,4 +116,3 @@ if you know it, please open an issue so it can be listed here.
 
 Pixart (Model I 2) support, the GUI and the installer were added in 2026 with the help of
 the community around the original repository.
->>>>>>> 6c96134 (Pixart: hardware-mapped DPI/colour/polling, GTK GUI, installer, README)
