@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=gloriousctl
+Comment=Configure Glorious mice (DPI, lighting, polling)
+Exec=gloriousctl-gui
+Icon=input-mouse
+Terminal=false
+Categories=Settings;HardwareSettings;
+Keywords=mouse;glorious;dpi;rgb;
